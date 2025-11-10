@@ -1,0 +1,52 @@
+<html>
+<head>
+ 
+<link rel="stylesheet"href="styles.css">
+</head>
+   
+    
+<body>
+    <h1><u>Examiners Dashboard</u></h1>
+ 
+
+<nav>
+    <nav>
+    <button onclick="showSection('setExam')">Set Exam</button>
+    
+    <button onclick="showSection('viewSubmissions')">View Submissions</button>
+    <button onclick="showSection('evaluateResults')">Evaluate Results</button>
+    <button onclick="showSection('releaseScores')">Release Scores</button>
+</nav>
+
+<section id="scheduleExam">
+    <h2>Schedule Exam</h2>
+    <label>Exam Title:</label>
+    <input type="text" id="scheduleTitle">
+    <label>Date:</label>
+    <input type="date" id="examDate">
+    <label>Time:</label>
+    <input type="time" id="examTime">
+    <button class="action" onclick="scheduleExam()">Schedule</button>
+    <div id="scheduleList"></div>
+</section>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

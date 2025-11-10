@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh ;
+    background: black;
+}
+p {
+    color:aliceblue;
+}
+
+.wrapper{
+    position:relative ;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 5px solid #454545;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.wrapper:hover {
+    border: 5px solid cyan;
+    box-shadow: 0 0 20px cyan, inset 0 0 20px cyan;
+
+}
+
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.wrapper:hover h2{
+    color:aqua;
+
+}
+
+.input-box{
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #223;
+    outline: none;
+    border-radius: 5px;
+    font-size: 1em;
+    color: aliceblue;
+    padding: 0 10px 0 35px;
+    transition: .5s;
+}
+.wrapper:hover .input-box input{
+    border: 5px solid cyan;
+    box-shadow: 0 0 20px cyan, inset 0 0 20px cyan;
+
+}
+
+
+.input-box .icon{
+         position: absolute;
+         left: 10px;
+         color:#fff ;
+         font-size: 1.2em;
+         line-height: 55px ;
+         transition: .5s;
+}
+.wrapper:hover .input-box .icon{
+    color:aqua;
+}
+
+.input-box::placeholder{
+
+color: rgba(225, 255, 255, .3);
+}
+.forgot-pass {
+    margin: 15px 0 15px;
+}
+
+.forgot-pass a{
+    color: #fff;
+    text-decoration: none;
+}
+.forgot-pass a:hover{
+    text-decoration: underline;
+}
+
+button {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: #223;
+    border: none;
+    outline: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    transition: .5s;
+}
+.register-link {
+    font-size: .9em;
+    text-align: center;
+    margin:25px 0;
+}
+.register-link p {
+    color:aliceblue;
+}
+.register-link p a{
+    color:rgb(6, 99, 180);
+    text-decoration: none;
+    font-weight:600;
+    transition:.5s;
+}
+.wrapper:hover .register-link p a{
+    color:aqua;
+}
+
+.forgot-pass {
+    font-size: .9em;
+    text-align: center;
+    margin:25px 0;
+}
+.forgot-pass p {
+    color:aliceblue;
+}
+.forgot-pass p a{
+    color:rgb(6, 84, 152);
+    text-decoration: none;
+    font-weight:600;
+    transition:.5s;
+}
+.wrapper:hover .forgot-pass p a{
+    color:aqua;
+}
+.exam{
+    color:aliceblue;
+}
+

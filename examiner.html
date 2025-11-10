@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examiner Dashboard - ExamPro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo">Exam<span>Pro</span></div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="examiner.html" class="active">Dashboard</a></li>
+                    <li><a href="examiner.html#exams">My Exams</a></li>
+                    <li><a href="examiner.html#questions">Question Bank</a></li>
+                    <li><a href="examiner.html#results">Evaluate Results</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <span class="examiner-badge">Examiner</span>
+                <a href="index.html" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="dashboard-header">
+            <h1 class="page-title">Examiner Dashboard</h1>
+            <div>
+                <a href="#exams" class="btn btn-primary">My Exams</a>
+                <a href="#questions" class="btn btn-primary">Question Bank</a>
+                <a href="#results" class="btn btn-primary">Evaluate Results</a>
+                <a href="#schedule" class="btn btn-primary">Schedule Exams</a>
+            </div>
+        </div>
+        
+        <div class="dashboard-stats">
+            <div class="stat-card">
+                <div class="stat-value">12</div>
+                <div class="stat-label">Exams Created</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">156</div>
+                <div class="stat-label">Questions in Bank</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">342</div>
+                <div class="stat-label">Submissions to Evaluate</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-value">78%</div>
+                <div class="stat-label">Average Completion Rate</div>
+            </div>
+        </div>
+        
+        <section id="exams">
+            <div class="card">
+                <div class="card-header">My Exams</div>
+                <div class="card-body">
+                    <div class="dashboard-header">
+                        <h2>Exam Management</h2>
+                        <button class="btn btn-success">Create New Exam</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Exam ID</th>
+                                <th>Exam Name</th>
+                                <th>Subject</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Submissions</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>EX001</td>
+                                <td>Mathematics Midterm</td>
+                                <td>Mathematics</td>
+                                <td>2023-10-20</td>
+                                <td><span class="status-upcoming">Scheduled</span></td>
+                                <td>0/45</td>
+                                <td class="action-buttons">
+                                    <button class="btn btn-primary btn-sm">Edit</button>
+                                    <button class="btn btn-warning btn-sm">Questions</button>
+                                    <button
